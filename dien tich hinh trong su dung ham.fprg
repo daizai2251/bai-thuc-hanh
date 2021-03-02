@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Administrator"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-02 03:03:56 PM"/>
+        <attribute name="created" value="QWRtaW5pc3RyYXRvcjtBRE1JTjsyMDIxLTAzLTAyOzAyOjU0OjU3IFBNOzMwMTU="/>
+        <attribute name="edited" value="QWRtaW5pc3RyYXRvcjtBRE1JTjsyMDIxLTAzLTAyOzAzOjAzOjU2IFBNOzE7MzExNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x" type="Integer" array="False" size=""/>
+            <output expression="&quot;input the radius of the cricle&quot;" newline="True"/>
+            <input variable="x"/>
+            <comment text="The following will call the Cricle funcition using the value user entered&#13;&#10;&#13;&#10;Notice that this variable &#237; called &quot;x&quot; while the funcition uses &quot;Radius&quot;.The value of &quot;x&quot; is passed the funcition"/>
+            <output expression="&quot;Area is &quot; &amp; Cricle(x)" newline="True"/>
+        </body>
+    </function>
+    <function name="Cricle" type="Real" variable="Radius">
+        <parameters>
+            <parameter name="Radius" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <comment text="This funcition has one parameter called Radius. It acts like a local varlable that is assigned when the funcition is called"/>
+            <declare name="Area" type="Real" array="False" size=""/>
+            <assign variable="Area" expression="pi * Radius ^ 2"/>
+            <comment text="This funcition returns the contents of the Area varlble"/>
+        </body>
+    </function>
+</flowgorithm>
